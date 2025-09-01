@@ -5,6 +5,11 @@ const { MikroORM } = require('@mikro-orm/core');
 const config = require('./mikro-orm.config.js');
 const { RequestLog } = require('./entities/RequestLog');
 
+const cors = require('cors');
+const bodyParser = require('body-parser');
+
+app.use(cors());
+app.use(bodyParser.json());
 
 let orm;
 
@@ -35,7 +40,7 @@ app.get('/getLogs', async (req, res) => {
 });
 
 
-app.listen(4000,(req,res)=>{
+app.listen(4000,()=>{
     console.log(`server is running om port: ${4000} `)
 })
 
