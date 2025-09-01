@@ -1,3 +1,5 @@
+In short: My plan is to create two schema. One for managing User CRUD and second one for saving the logs activity.
+
 I am first creating backend folder inside which we will be creating our server:
 
 npm init -y
