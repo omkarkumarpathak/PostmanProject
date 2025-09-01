@@ -17,6 +17,6 @@ npm install
   **iv) Installing MikroORM**
   npm i mikro-orm @mikro-orm/core @mikro-orm/migrations @mikro-orm/sqlite
 
-  v) setting up a database table using MikroORM
+  v) setting up a database using MikroORM
   
 
